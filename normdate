@@ -15,7 +15,7 @@ monthNumToName()
 		5 ) month="May"		;;
 		6 ) month="Jun"		;;
 		7 ) month="Jul"		;;
-		8 ) month="Aug" 	;;
+		8 ) month="Aug"		;;
 		9 ) month="Sep"		;;
 		10) month="Oct"		;;
 		11) month="Nov"		;;
