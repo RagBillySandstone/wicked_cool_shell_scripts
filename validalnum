@@ -1,0 +1,35 @@
+#!/bin/bash
+# validalnum -- Ensures that input consists of only alphanumeric characters
+
+validAlphaNum()
+{
+	# Validate arg: returns 0 if all upper, lower case or digits; 
+	# 1 otherwise
+
+	# Remove all unacceptable characters
+	validchars="$(echo $1 | sed -e 's/[^[:alnum:]]//g')"
+
+	if [ "$validchars" = "$1" ] ; then
+		return 0
+	else
+		return 1
+	fi
+}
+
+###################################################
+# Main script -- comment out to use this function in other scripts
+
+#/bin/echo -n "Enter some input: "
+#read input
+
+# Input validation
+#if ! validAlphaNum "$input" ; then
+#	echo "Please enter only alphanumeric characters." >&2
+#	exit 1
+#else 
+#	echo "Input is valid."
+#fi
+
+#exit 0
+
+
