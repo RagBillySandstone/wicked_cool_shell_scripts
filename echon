@@ -1,0 +1,10 @@
+
+# a function to replace "echo -n"
+
+echon()
+{
+	echo "$*" | tr -d '\n'
+	#printf "%s" "$*"
+	#echo "$*" | awk '{ printf "%s", $0 }'
+}
+
